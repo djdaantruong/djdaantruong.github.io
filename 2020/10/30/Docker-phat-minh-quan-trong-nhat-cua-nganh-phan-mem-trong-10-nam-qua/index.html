@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Core"><title>Docker phát minh quan trọng nhất của ngành phần mềm trong 10 năm qua? · Hexo</title><meta name="description" content="Những hiểu lầm về Docker
+So sánh với Virtual Machine
+Tên gọi docker (tên cty và tên phần mềm, không phải tên công nghệ)
+Docker 1 mình sáng tạo ra cont"><meta name="keywords" content="极限博客,极限Blog,博客,极限"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">Hexo</a></h3><div class="description"><p>心之所愿，无事不成。<br> Nothing is impossible to a willing heart.</p></div></div></div><ul class="social-links"><li><a target="_blank" rel="noopener" href="https://github.com/mrcore"><i class="fa fa-github"></i></a></li><li><a href="mailto:x@jixian.io"><i class="fa fa-envelope"></i></a></li><li><a target="_blank" rel="noopener" href="http://sighttp.qq.com/authd?IDKEY="><i class="fa fa-qq"></i></a></li><li><a target="_blank" rel="noopener" href="https://zhihu.com/people/"><i class="fa fa-mortar-board"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2017 - 2020 </span><i class="fa fa-star"></i><span> Core</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备15011643号</a><span style="height:10px;margin-left: 10px;">|</span><img src="https://qn.jixian.io/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;">粤公网安备 44030402003967号</span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li><a href="/about">关于</a></li><li><a href="/guestbook">留言</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>Docker phát minh quan trọng nhất của ngành phần mềm trong 10 năm qua?</a></h3></div><div class="post-content"><h2 id="Nhung-hieu-lam-ve-Docker"><a href="#Nhung-hieu-lam-ve-Docker" class="headerlink" title="Những hiểu lầm về Docker"></a>Những hiểu lầm về Docker</h2><ul>
+<li>So sánh với Virtual Machine</li>
+<li>Tên gọi docker (tên cty và tên phần mềm, không phải tên công nghệ)</li>
+<li>Docker 1 mình sáng tạo ra container (open source)</li>
+</ul>
+<h2 id="Lich-su-Container"><a href="#Lich-su-Container" class="headerlink" title="Lịch sử Container"></a>Lịch sử Container</h2><ul>
+<li>1979 - Chroot - Unix 1979</li>
+<li>2002 - Linux namespaces - Al Viro</li>
+<li>2004 - UnionFS - Erez Zadok - Stony Brook University</li>
+<li>2007 - Cgroups - Google</li>
+<li>2013 - Docker</li>
+</ul>
+<h2 id="Container-runtime-phan-quan-trong-nhat-trong-docker"><a href="#Container-runtime-phan-quan-trong-nhat-trong-docker" class="headerlink" title="Container runtime (phần quan trọng nhất trong docker)"></a>Container runtime (phần quan trọng nhất trong docker)</h2><ul>
+<li>runC</li>
+<li>contained</li>
+<li>Docker (tài liệu nhiều, công động lớn)</li>
+<li>rkt</li>
+<li>CRI-O</li>
+<li>LXC</li>
+<li>Kata</li>
+<li>gVisor</li>
+<li>podman</li>
+</ul>
+<h2 id="Container-hoat-dong-nhu-the-nao"><a href="#Container-hoat-dong-nhu-the-nao" class="headerlink" title="Container hoạt động như thế nào?"></a>Container hoạt động như thế nào?</h2><h2 id="Dung-container-o-dau"><a href="#Dung-container-o-dau" class="headerlink" title="Dùng container ở đâu ?"></a>Dùng container ở đâu ?</h2><ul>
+<li>Đóng gói những ứng dụng chạy được trên nhiều nền tảng khác nhau (Web, API, TCP/IP)</li>
+<li>Cho phép phát hành ứng dụng theo phiên bản rõ ràng</li>
+<li>Tăng tốc làm việc cả đội dự án (Đồng nhất môi trường làm việc: Dev - Staging - Production, Cấu hình sẵn giúp triển khai nhẹ nhàng, Tự động hoá kiểm thử triển khai)</li>
+<li>Scale up năng lực phục vụ dễ dàng (mua nhiểu server nhỏ, dùng tới đâu mua thêm)</li>
+<li>Tăng cường bảo mật nhờ sự cô lập ứng dụng</li>
+<li>Playground (sân chơi phá phách mọi thứ, tìm hiểu học thì cài lên container tha hồ nghiên cứu)</li>
+</ul>
+<h2 id="Tai-sao-Docker-pho-bien"><a href="#Tai-sao-Docker-pho-bien" class="headerlink" title="Tại sao Docker phổ biến ?"></a>Tại sao Docker phổ biến ?</h2><ul>
+<li>Lightweight: nhẹ</li>
+<li>Portable: khả năng linh động, chạy nhiều nơi</li>
+<li>Fast: nhanh</li>
+<li>No hypervisor: không giải pháp ảo hoá cầu nối, phiền, nhiều hạn chế tài nguyên</li>
+</ul>
+<h2 id="Tai-sao-ban-nen-hoc-Docker-cang-som-cang-tot"><a href="#Tai-sao-ban-nen-hoc-Docker-cang-som-cang-tot" class="headerlink" title="Tại sao bạn nên học Docker càng sớm càng tốt ?"></a>Tại sao bạn nên học Docker càng sớm càng tốt ?</h2><ul>
+<li>25% cty sử dụng nhưng tiềm năng nó lớn (tăng 75%) - cần nhiều nguồn nhân lực biết dùng Docker, cải thiện đời sống lập trình, nên học càng sớm càng tốt</li>
+</ul>
+<h2 id="Ban-se-uoc-minh-biet-nhung-dieu-nay-ve-Docker-som-hon"><a href="#Ban-se-uoc-minh-biet-nhung-dieu-nay-ve-Docker-som-hon" class="headerlink" title="Bạn sẽ ước mình biết những điều này về Docker sớm hơn ?"></a>Bạn sẽ ước mình biết những điều này về Docker sớm hơn ?</h2><ul>
+<li>Sử dụng docker-compose (giúp gõ lệnh tiện hơn, 1 lệnh cho tất cả)</li>
+<li>Hạn chế user root trong Dockerfile</li>
+<li>Tối ưu layer trong Dockerfile (RUN-COPY-ADD)</li>
+<li>Sử dụng multi-stage build giúp image nhỏ hơn</li>
+<li>Entrypoint và CMD</li>
+</ul>
+<h2 id="Coi-youtube-Docker-tutorial-de-hoc-va-lam-theo"><a href="#Coi-youtube-Docker-tutorial-de-hoc-va-lam-theo" class="headerlink" title="Coi youtube Docker tutorial để học và làm theo"></a>Coi youtube Docker tutorial để học và làm theo</h2></div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2020-10-30</span><i class="fa fa-tag"></i><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" target="_blank" rel="noopener" href="http://twitter.com/home?status=,http://example.com/2020/10/30/Docker-phat-minh-quan-trong-nhat-cua-nganh-phan-mem-trong-10-nam-qua/,Hexo,Docker phát minh quan trọng nhất của ngành phần mềm trong 10 năm qua?,;"></a></div></div><div class="pagination"><ul class="clearfix"><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/10/30/hello-world/" title="Hello World">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'',
+  app_key:'',
+  placeholder:'念念不忘，必有回响...',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  avatar:'mp'
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script></body></html>
